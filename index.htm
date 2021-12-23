@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            box-sizing: border-box;
+
+        }
+        header {
+            width: 100vw;
+            height:40px;
+            background: rgba(7, 130, 201, 0.815);
+            display: grid;
+            place-items: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #fff;
+        }
+        main {
+            width: 100vw;
+            min-height: calc(100vh - 40px);
+            background: rgba(7, 130, 201, 0.815);
+            padding: 50px 100px;
+            text-align: center;
+
+        }
+        .card{
+            width: 250px;
+            height: 270px;
+            background: #fff;
+            border-radius: 2rem;
+            padding: 20px;
+            box-shadow: 2px 0px 5px rgb(19, 180, 159);
+            transform: rotateY(180deg);
+            position: relative;
+            transition: all .6s;
+            display: inline-block;
+            margin: 10px;
+        }
+        .card:active{
+            transform: rotateY(0deg);
+        }
+        .card:active .object{
+            visibility: visible;
+        }
+        .object{
+            visibility: hidden;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background:gray;
+            top: 0;
+            left: 0;
+            border-radius: 2rem; 
+            display: grid;
+            place-items: center;
+            
+        }
+        .object img{
+            width: 90%;
+            height: 90%;
+            border-radius: 2rem; 
+        }
+    </style>
+</head>
+<body onload="">
+    <header>
+        Guess the Card
+
+        <button class="reload">
+            ReStart 
+        </button>
+        <div class="scorePanel">Your Score:: <span class="scoreBoard"></span></div>
+    </header>
+    <main>
+        <div class="card traget" data-settings="close">
+            <div class="object" data-value="me">
+                <img src="img/hello.gif">
+            </div>
+        </div>
+        <div class="card traget" data-settings="close">
+            <div class="object" data-value="mme" >
+                <img src="img/hello.gif">
+            </div>
+        </div>
+        <div class="card traget" data-settings="close">
+            <div class="object" data-value="meme" >
+                <img src="img/hello.gif">
+            </div>
+        </div>
+        <div class="card traget" data-settings="close">
+            <div class="object" data-value="me" >
+               <img src="img/hello.gif">
+
+            </div>
+        </div>
+        <div class="card traget" data-settings="close">
+            <div class="object" data-value="meme" >
+               <img src="img/hello.gif">     
+            </div>
+        </div>
+        <div class="card traget" data-settings="close">
+            <div class="object" data-value="me" >
+                <img src="img/hello.gif">
+            </div>
+        </div>
+        <div class="card traget" data-settings="close">
+            <div class="object" data-value="me" >
+                <img src="img/hello.gif">
+            </div>
+        </div>
+        <div class="card traget" data-settings="close">
+            <div class="object" data-value="me" >
+                <img src="img/hello.gif">
+            </div>
+        </div>
+        <div class="card traget" data-settings="close">
+            <div class="object" data-value="me" >
+                <img src="img/hello.gif">
+            </div>
+        </div>
+        <div class="card traget" data-settings="close">
+            <div class="object" data-value="me" >
+                <img src="img/hello.gif">
+            </div>
+        </div>
+        <div class="card traget" data-settings="close">
+            <div class="object" data-value="me" >
+                <img src="img/hello.gif">
+            </div>
+        </div>
+        <div class="card traget" data-settings="close">
+            <div class="object" data-value="me" >
+                <img src="img/hello.gif">
+            </div>
+        </div>
+        <div class="card traget" data-settings="close">
+            <div class="object" data-value="me" >
+                <img src="img/hello.gif">
+            </div>
+        </div>
+        <div class="card traget" data-settings="close">
+            <div class="object" data-value="me" >
+                <img src="img/hello.gif">
+            </div>
+        </div>
+        <div class="card traget" data-settings="close">
+            <div class="object" data-value="me" >
+                <img src="img/hello.gif">
+            </div>
+        </div>
+        <div class="card traget" data-settings="close">
+            <div class="object" data-value="me" >
+                <img src="img/hello.gif">
+            </div>
+        </div>
+        <div class="card traget" data-settings="close">
+            <div class="object" data-value="me" >
+                <img src="img/hello.gif">
+            </div>
+        </div>
+        <div class="card traget" data-settings="close">
+            <div class="object" data-value="me" >
+                <img src="img/hello.gif">
+            </div>
+        </div>
+        <div class="card traget" data-settings="close">
+            <div class="object" data-value="me" >
+                <img src="img/hello.gif">
+            </div>
+        </div>
+        <div class="card traget" data-settings="close">
+            <div class="object" data-value="me" >
+                <img src="img/hello.gif">
+            </div>
+        </div>
+        <div class="card traget" data-settings="close">
+            <div class="object" data-value="me" >
+                <img src="img/hello.gif">
+            </div>
+        </div>
+        <div class="card traget" data-settings="close">
+            <div class="object" data-value="me" >
+                <img src="img/hello.gif">
+            </div>
+        </div>
+        <div class="card traget" data-settings="close">
+            <div class="object" data-value="me" >
+                <img src="img/hello.gif">
+            </div>
+        </div>
+        <div class="card traget" data-settings="close">
+            <div class="object" data-value="me" >
+                <img src="img/hello.gif">
+            </div>
+        </div>
+    </main>
+    
+</body>
+<script>
+    var open = 0; // this variable tells how many card is open its logical limit is 2(two) i.e when you open the two guest card
+    var CardValue = []; // this array variable store the data type of the two open cards to check if their same in line 289
+    var Score = 0; //This the players score
+    var Value = ['hello', 'world', 'mike']; //This is the list of all the available cards and also  the name of the card image
+    const scoreBoard = document.querySelector('.scoreBoard'); // the score board querySelector
+    
+    //This function shuffle() is to reset and shuffle the card
+    function shuffle() {
+        open = 0;// set this variable to default value 0
+        CardValue = []; // emptying the array
+        Score = 0; // set this variable to default value 0
+        let card = document.querySelectorAll(".card"); //selecting all cards
+        scoreBoard.innerHTML = 0; // showing ) on the scoreboard
+
+        // looping through all the element with className card
+        card.forEach(element => {
+        Math.random() * 100;
+
+        // element.style= "transform: rotateY(180deg);"; rotating the card 180deg to hide content
+        let imageValue = Value[Math.ceil(Math.random() * 3 - 1)]; //preparing a random image and value for card
+        let Image = 'img/'+imageValue+'.gif'; //setting the imaging
+        // console.log(Image);
+        element.childNodes[1].style=`visibility: hidden;`; //hidding the card image
+        element.dataset['settings'] = "close"; //settings all the card data-attribute for view to closed
+        element.classList.add("traget"); 
+        element.classList.remove("card-value");
+
+
+
+        element.childNodes[1].childNodes[1].src = Image;
+        element.childNodes[1].dataset['value'] = imageValue;
+        
+            // element.childNodes[1].dataset['value'] = '';
+
+        // console.log(element.childNodes[1].childNodes[1]);
+        open = 0;
+        CardValue = [];
+        });
+        
+        }
+
+        function reset() {
+            let card = document.querySelectorAll(".traget");
+            card.forEach(element => {
+            
+            element.style= "transform: rotateY(180deg);";
+            element.childNodes[1].style="visibility: hidden;";
+            element.dataset['settings'] = "close";
+
+            // console.log(element.childNodes[1].dataset);
+            open = 0;
+            CardValue = [];
+            });
+
+        }
+        // document.querySelector('body').addEventListener('load', function(){
+            let card = document.querySelectorAll(".traget");
+            card.forEach(element => {
+                // element.dataset['settings'] = "open";
+                
+
+                
+                element.addEventListener("click", function(){
+                    let view = element.dataset['settings'];
+                    if (view === "open") {
+                    // console.log(element.dataset);
+                    }
+                    else{
+                element.dataset['settings'] = "open";
+                element.style= "transform: rotateY(0deg);";
+                element.childNodes[1].style="visibility: visible;";
+                // console.log(element.dataset);
+                CardValue.push(element.childNodes[1].dataset['value']);
+                // console.log(CardValue);
+                // element.dataset['settings'] = "close";
+                element.classList.add("card-value");
+                
+                open += 1;
+                switch (open) {
+                    case 1:
+                        
+                        break;
+                        case 2:
+                            if (CardValue[0] === CardValue[1]) {
+                                let opened = document.querySelectorAll(".card-value");
+                                // console.log(opened);
+                                opened.forEach(element => {
+                                element.classList.remove("traget");
+                                // console.log(element.classList);
+                                });
+                                Score+=2;
+                                setTimeout(() => {
+                                scoreBoard.innerHTML = Score;
+
+                                }, 500);
+
+                                CardValue = [];
+
+                                
+                                open = 0;
+
+
+                            }
+                            else{
+                                setTimeout(function(){
+                                    let opened = document.querySelectorAll(".card-value");
+                                    opened.forEach(elemen => {
+                                    elemen.classList.remove("card-value");
+                                    });
+                                    reset();
+                                }, 1000);
+                                
+
+                            }
+
+                            break;
+                
+                    default:
+                        reset();
+                        break;
+                }
+            
+            
+                // element.childNodes[1];
+            }
+                });
+            
+            });
+            window.addEventListener('load', function(){
+                shuffle();
+            });
+            document.querySelector(".reload").addEventListener('click', function(){
+                shuffle();
+            });
+            
+        // })
+    
+</script>
+</html>
